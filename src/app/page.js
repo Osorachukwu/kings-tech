@@ -5,15 +5,19 @@ import Porfolio from "@/components/portfolio/Portfolio";
 import OurServices from "@/components/OurServices";
 import AboutUs from "@/components/AboutUs";
 import WhatsappChat from "@/components/WhatsappChat";
+import AltNav from "@/components/navBar/AltNav";
+import CaptivateYourAudience from "@/components/CaptivateYourAudience";
 
 export default function Home() {
   return (
     <>
-    <NavBar />
+    <AltNav />
+    {/* <NavBar /> */}
     <Hero />
     <AboutUs />
     <OurServices />
     <WhatsappChat />
+    <CaptivateYourAudience />
     {/* <Porfolio /> */}
     </>
 
