@@ -1,55 +1,82 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from '@/assets/kings-tech-logo.jpeg'
+import logo from "@/assets/kings-tech-logo.jpeg";
+import { Phone, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-        <div className="h-full pl-5 flex items-center">
-          <Link
-            href="/"
-            className="flex items-center gap-1 whitespace-nowrap"
-          >
+    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div className="w-full max-w-screen-xl mx-auto p-6">
+        <div className="sm:flex sm:items-center sm:justify-between space-y-6 sm:space-y-0">
+          {/* Logo and Motto */}
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src={logo}
-              alt="Logo"
-              className="h-full w-8 lg:h-16 lg:w-16 rounded-full"
+              alt="Kings Tech Logo"
+              width={64}
+              height={64}
+              className="rounded-full"
             />
-            <div>
-              <p className="text-lg font-medium">Kings Tech</p>
-              <p className="text-xs">..your vision, our code</p>
+            <div className="text-left">
+              <p className="text-lg font-semibold">Kings Tech</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">...your vision, our code</p>
             </div>
           </Link>
-        </div>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li className="hover:text-purple-500">
-              <a href="#" class="hover:underline me-4 md:me-6">
+
+          {/* Contact Details */}
+          <div className="flex flex-col lg:flex-row m-5 gap-4 text-sm whitespace-nowrap">
+            <div className="flex flex-col space-y-2">
+              <a href="tel:+2348125208257" className="flex items-center gap-2">
+                <Phone size={20} />
+                <span>+234 812 520 8257</span>
+              </a>
+              <a href="tel:+2347037803410" className="flex items-center gap-2">
+                <Phone size={20} />
+                <span>+234 703 780 3410</span>
+              </a>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <a href="mailto:olisahdaniel75@gmail.com" className="flex items-center gap-2">
+                <Mail size={20} />
+                <span>olisahdaniel75@gmail.com</span>
+              </a>
+              <a
+                href="https://www.instagram.com/kingtech820"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Instagram size={20} />
+                <span>Conect with us on Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Navigation Links */}
+          <ul className="text-sm flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 dark:text-gray-400">
+            <li>
+              <a href="#" className="hover:text-purple-500 hover:underline">
                 About
               </a>
             </li>
-            <li className="hover:text-purple-500">
-              <a href="#" class="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </a>
-            </li>
-            <li className="hover:text-purple-500">
-              <a href="#" class="hover:underline">
+            <li>
+              <a href="#" className="hover:text-purple-500 hover:underline">
                 Contact
               </a>
             </li>
           </ul>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+
+        <hr className="my-6 border-gray-200 dark:border-gray-700" />
+
+        <div className="text-center text-sm text-gray-500 dark:text-gray-400">
           © 2023{" "}
-          <a href="" class="hover:underline">
+          <a href="/" className="font-semibold hover:underline">
             Kings Tech™
-          </a>
-          . All Rights Reserved.
-        </span>
+          </a>{" "}
+          All Rights Reserved.
+        </div>
       </div>
     </footer>
   );

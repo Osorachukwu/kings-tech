@@ -13,7 +13,7 @@ export default function NavBarAlt() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50 mb-16">
       <div className="flex justify-between gap-10 md:justify-center items-center max-w-7xl mx-auto p-3 md:px-8">
         <div className="flex items-center gap-2">
           <Link href="/">
@@ -38,21 +38,21 @@ export default function NavBarAlt() {
             className="hover:text-blue-600"
             onClick={handleToggle}
           >
-            About
-          </Link>
-          <Link
-            href="/gallery"
-            className="hover:text-blue-600"
-            onClick={handleToggle}
-          >
             Portfolio
           </Link>
           <Link
-            href="/gallery"
+            href="/services"
             className="hover:text-blue-600"
             onClick={handleToggle}
           >
             Services
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-blue-600"
+            onClick={handleToggle}
+          >
+            Contact
           </Link>
         </nav>
 
@@ -86,7 +86,7 @@ export default function NavBarAlt() {
             </li>
             <li>
               <Link
-                href="/gallery"
+                href="/contact"
                 className="hover:text-blue-600"
                 onClick={handleToggle}
               >

@@ -8,7 +8,7 @@ export default function ServicesPage() {
     <div>
       <div className="">
         {/* Title */}
-        <div className="text-center md:text-left my-16 lg:pr-64 ">
+        <div className="text-center md:text-left my-16 lg:pr-64 container px-4 mx-auto">
           <h2 className="text-4xl font-extrabold dark:text-white">
             Our Services
           </h2>
@@ -23,7 +23,7 @@ export default function ServicesPage() {
         </div>
 
         {/* 💥 Custom Web Development Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-10 container px-4 mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-8 my-10 container px-4 mx-auto">
           {/* Image */}
           <div className="w-full md:w-1/2 lg:p-10 bg-pink-100">
             <Image
@@ -153,7 +153,7 @@ export default function ServicesPage() {
               </p>
             </div>
             {/* Image */}
-            <div className="w-full md:w-1/2 lg:px-10">
+            <div className="w-full md:w-1/2 lg:p-10">
               <Image
                 src={customeWebDev}
                 alt="Custom Web Development"
@@ -163,7 +163,7 @@ export default function ServicesPage() {
           </div>
         </div>
         {/* 💥Digital Marketing */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-10  container px-4 mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-10 container px-4 mx-auto my-10">
           {/* Image */}
           <div className="w-full md:w-1/2 lg:p-10 bg-pink-100">
             <Image
@@ -234,67 +234,69 @@ export default function ServicesPage() {
           </div>
         </div>
         {/* 💥Graphic design*/}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
-          {/* Text Content */}
-          <div className="w-full md:w-1/2 space-y-4">
-            <h2 className="text-2xl font-bold dark:text-white">
-              Graphic & Branding
-            </h2>
-            <p className="text-lg text-gray-500">
-              Our Expert Graphic and Branding Team Creates Strong Visual
-              Identities That Reflect Your Unique Personality and Values
-            </p>
-            <p className="text-lg text-gray-500">
-              We start by understanding your target audience, goals, and
-              competitive landscape. Then, we use our expertise in graphic
-              design, typography, and color theory to create a brand that is
-              both effective and memorable.
-            </p>
-            <p className="text-lg text-gray-500">
-              Our work has helped businesses of all sizes achieve their
-              marketing and sales goals. We're confident that we can help you
-              create a brand that will help you grow your business
-            </p>
+        <div className="bg-purple-200 py-14">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-10 container px-4 mx-auto">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 space-y-4">
+              <h2 className="text-2xl font-bold dark:text-white">
+                Graphic & Branding
+              </h2>
+              <p className="text-lg text-gray-500">
+                Our Expert Graphic and Branding Team Creates Strong Visual
+                Identities That Reflect Your Unique Personality and Values
+              </p>
+              <p className="text-lg text-gray-500">
+                We start by understanding your target audience, goals, and
+                competitive landscape. Then, we use our expertise in graphic
+                design, typography, and color theory to create a brand that is
+                both effective and memorable.
+              </p>
+              <p className="text-lg text-gray-500">
+                Our work has helped businesses of all sizes achieve their
+                marketing and sales goals. We're confident that we can help you
+                create a brand that will help you grow your business
+              </p>
 
-            {/* List of Services */}
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              We also offer a wide range of branding services, including:
-            </h3>
-            <ul className="space-y-4 text-gray-500 dark:text-gray-400">
-              {[
-                "Logo design",
-                "Brand identity development",
-                "Website design",
-                " Print design",
-                "Advertising",
-              ].map((service, index) => (
-                <li key={index} className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 16 12"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5.917L5.724 10.5 15 1.5"
-                    />
-                  </svg>
-                  <span>{service}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Image */}
-          <div className="w-full md:w-1/2 lg:px-10">
-            <Image
-              src={customeWebDev}
-              alt="Custom Web Development"
-              className="rounded-lg lg:h-[35rem]"
-            />
+              {/* List of Services */}
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                We also offer a wide range of branding services, including:
+              </h3>
+              <ul className="space-y-4 text-gray-500 dark:text-gray-400">
+                {[
+                  "Logo design",
+                  "Brand identity development",
+                  "Website design",
+                  " Print design",
+                  "Advertising",
+                ].map((service, index) => (
+                  <li key={index} className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 16 12"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 5.917L5.724 10.5 15 1.5"
+                      />
+                    </svg>
+                    <span>{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Image */}
+            <div className="w-full md:w-1/2 lg:px-10">
+              <Image
+                src={customeWebDev}
+                alt="Custom Web Development"
+                className="rounded-lg lg:h-[35rem]"
+              />
+            </div>
           </div>
         </div>
       </div>
