@@ -29,7 +29,7 @@ export default function AboutUs() {
 
           <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
             Transform your online presence with our cutting-edge web solutions.
-            Let's build something amazing together! Our development team helps
+            Lets build something amazing together! Our development team helps
             you harness cutting-edge web technologies to create intuitive,
             responsive websites that captivate your audience and grow your
             business.
