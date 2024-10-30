@@ -20,12 +20,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  function sum(a, b){
+    return a + b
+  }
+  console.log(sum(2, 6))
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-80 overflow-x-hidden`}
       >
-            <AltNav />
+        <AltNav />
 
         {children}
         <Footer />

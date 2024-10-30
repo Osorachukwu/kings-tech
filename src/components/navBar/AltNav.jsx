@@ -20,7 +20,7 @@ export default function NavBarAlt() {
             <Image
               src={companyLogo}
               alt="logo"
-              height={40}
+              height={70}
               className="rounded-full"
             />
           </Link>
@@ -33,13 +33,13 @@ export default function NavBarAlt() {
           <Link href="/" className="hover:text-blue-600">
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/gallery"
             className="hover:text-blue-600"
             onClick={handleToggle}
           >
             Portfolio
-          </Link>
+          </Link> */}
           <Link
             href="/services"
             className="hover:text-blue-600"

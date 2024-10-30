@@ -1,15 +1,29 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import Aos from "aos";
 
 export default function Hero() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section class="hero-bg bg-center bg-no-repeat  bg-gray-700 bg-blend-multiply">
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        <h1
+          data-aos="zoom-in-up"
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+        >
           Innovative Solutions for a Digital World
         </h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+        <p
+          data-aos="zoom-in-up"
+          class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        >
           Where passion meets precision. Expert web development for
-          forward-thinking businesses.  We craft innovative, user-centric web solutions tailored to meet your business needs. From sleek designs to robust functionality, our expertise brings your vision to life online.
+          forward-thinking businesses. We craft innovative, user-centric web
+          solutions tailored to meet your business needs. From sleek designs to
+          robust functionality, our expertise brings your vision to life online.
         </p>
         {/* <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a

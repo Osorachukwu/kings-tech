@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "embla-carousel": "8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-fade": "8.3.0",
@@ -17,7 +18,8 @@
     "lucide-react": "^0.452.0",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "daisyui": "^4.12.13",

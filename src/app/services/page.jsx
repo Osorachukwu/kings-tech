@@ -65,7 +65,7 @@ export default function ServicesPage() {
               ].map((service, index) => (
                 <li key={index} className="flex items-center space-x-3">
                   <svg
-                    className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
+                    className="flex-shrink-0 w-4 h-4 text-purple-500 dark:text-purple-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 16 12"
@@ -104,7 +104,7 @@ export default function ServicesPage() {
               <p className="text-lg text-gray-500">
                 Get ahead of your competitors with a user-centered mobile app
                 that delivers a memorable user experience and propels your
-                brand's growth. We are a trusted mobile app development company
+                brands growth. We are a trusted mobile app development company
                 for world-class brands.
               </p>
               <p className="text-lg text-gray-500">
@@ -128,7 +128,7 @@ export default function ServicesPage() {
                 ].map((service, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <svg
-                      className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
+                      className="flex-shrink-0 w-4 h-4 text-purple-500 dark:text-purple-400"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 16 12"
@@ -199,7 +199,7 @@ export default function ServicesPage() {
               ].map((service, index) => (
                 <li key={index} className="flex items-center space-x-3">
                   <svg
-                    className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
+                    className="flex-shrink-0 w-4 h-4 text-purple-500 dark:text-purple-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 16 12"
@@ -253,7 +253,7 @@ export default function ServicesPage() {
               </p>
               <p className="text-lg text-gray-500">
                 Our work has helped businesses of all sizes achieve their
-                marketing and sales goals. We're confident that we can help you
+                marketing and sales goals. We &apos; re confident that we can help you
                 create a brand that will help you grow your business
               </p>
 
@@ -271,7 +271,7 @@ export default function ServicesPage() {
                 ].map((service, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <svg
-                      className="flex-shrink-0 w-4 h-4 text-green-500 dark:text-green-400"
+                      className="flex-shrink-0 w-4 h-4 text-purple-500 dark:text-purple-400"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 16 12"
