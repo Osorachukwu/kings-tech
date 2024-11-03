@@ -55,15 +55,16 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <ul className="text-sm flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 dark:text-gray-400">
+            
             <li>
-              <a href="#" className="hover:text-purple-500 hover:underline">
-                About
-              </a>
+              <Link href="/contact" className="hover:text-purple-500 hover:underline">
+                Contact
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-purple-500 hover:underline">
-                Contact
-              </a>
+              <Link href="/about" className="hover:text-purple-500 hover:underline">
+                Services
+              </Link>
             </li>
           </ul>
         </div>

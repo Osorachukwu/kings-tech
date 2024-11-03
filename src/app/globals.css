@@ -34,3 +34,15 @@ body {
   background-size: cover;
 }
 /* bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] */
+
+/* 👇Embla */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

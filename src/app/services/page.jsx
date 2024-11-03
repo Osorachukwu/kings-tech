@@ -2,32 +2,33 @@ import React from "react";
 import Image from "next/image";
 import customeWebDev from "@/assets/ariking-about.jpg";
 import Link from "next/link";
+import HeroSub from "@/components/HeroSub";
+import CaptivateYourAudience from "@/components/CaptivateYourAudience";
+import mobileAppDevImage from '@/assets/mobile-app-dev.JPEG'
+import digitalMarketingImage from '@/assets/digital-marketing-advantages.webp';
+import graphicDesignImage from '@/assets/Graphic-Design-Services.jpg';
+import webDevImage from '@/assets/webDev-banner.jpg'
 
 export default function ServicesPage() {
   return (
     <div>
-      <div className="">
-        {/* Title */}
-        <div className="text-center md:text-left my-16 lg:pr-64 container px-4 mx-auto">
-          <h2 className="text-4xl font-extrabold dark:text-white">
-            Our Services
-          </h2>
-          <p className="mt-4 text-lg text-gray-500">
-            We are a full-service digital agency that can help you take your
+      <HeroSub
+        title="Our Services"
+        subTitle="We are a full-service digital agency that can help you take your
             business to the next level. We offer a wide range of services, from
             website design and development to mobile app development and digital
             marketing. Our team of experts will work with you to understand your
             needs and create a custom solution that will help you achieve your
-            goals.
-          </p>
-        </div>
-
+            goals."
+            pageName="Services"
+      />
+      <div className="">
         {/* 💥 Custom Web Development Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 my-10 container px-4 mx-auto">
           {/* Image */}
           <div className="w-full md:w-1/2 lg:p-10 bg-pink-100">
             <Image
-              src={customeWebDev}
+              src={webDevImage}
               alt="Custom Web Development"
               className="rounded-lg lg:h-[35rem]"
             />
@@ -155,7 +156,7 @@ export default function ServicesPage() {
             {/* Image */}
             <div className="w-full md:w-1/2 lg:p-10">
               <Image
-                src={customeWebDev}
+                src={mobileAppDevImage}
                 alt="Custom Web Development"
                 className="rounded-lg lg:h-[35rem]"
               />
@@ -167,7 +168,7 @@ export default function ServicesPage() {
           {/* Image */}
           <div className="w-full md:w-1/2 lg:p-10 bg-pink-100">
             <Image
-              src={customeWebDev}
+              src={digitalMarketingImage}
               alt="Custom Web Development"
               className="rounded-lg lg:h-[35rem]"
             />
@@ -253,8 +254,8 @@ export default function ServicesPage() {
               </p>
               <p className="text-lg text-gray-500">
                 Our work has helped businesses of all sizes achieve their
-                marketing and sales goals. We &apos; re confident that we can help you
-                create a brand that will help you grow your business
+                marketing and sales goals. We &apos; re confident that we can
+                help you create a brand that will help you grow your business
               </p>
 
               {/* List of Services */}
@@ -292,7 +293,7 @@ export default function ServicesPage() {
             {/* Image */}
             <div className="w-full md:w-1/2 lg:px-10">
               <Image
-                src={customeWebDev}
+                src={graphicDesignImage}
                 alt="Custom Web Development"
                 className="rounded-lg lg:h-[35rem]"
               />
@@ -300,6 +301,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
+      <CaptivateYourAudience />
     </div>
   );
 }

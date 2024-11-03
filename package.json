@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "aos": "^2.3.4",
     "embla-carousel": "8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
