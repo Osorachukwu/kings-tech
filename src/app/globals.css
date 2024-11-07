@@ -46,3 +46,16 @@ body {
   flex: 0 0 100%;
   min-width: 0;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 5s linear infinite;
+}
+

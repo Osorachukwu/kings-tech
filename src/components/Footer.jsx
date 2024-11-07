@@ -16,7 +16,7 @@ export default function Footer() {
               alt="Kings Tech Logo"
               width={64}
               height={64}
-              className="rounded-full"
+              className="rounded-full rotate-animation"
             />
             <div className="text-left">
               <p className="text-lg font-semibold">Kings Tech</p>

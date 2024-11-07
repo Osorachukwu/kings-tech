@@ -26,7 +26,7 @@ export default function ServicesPage() {
         {/* 💥 Custom Web Development Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 my-10 container px-4 mx-auto">
           {/* Image */}
-          <div className="w-full md:w-1/2 lg:p-10 bg-pink-100">
+          <div className="w-full md:w-1/2 lg:p-10 bg-pink-100" data-aos="fade-up">
             <Image
               src={webDevImage}
               alt="Custom Web Development"
@@ -96,9 +96,9 @@ export default function ServicesPage() {
         </div>
         {/* 💥Mobile App Development Section */}
         <div className="bg-purple-200 py-14">
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-10 container px-4 mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-10 container px-4 mx-auto" >
             {/* Text Content */}
-            <div className="w-full md:w-1/2 space-y-4">
+            <div className="w-full md:w-1/2 space-y-4" data-aos="fade-left">
               <h2 className="text-2xl font-bold dark:text-white">
                 User-Centered Mobile App Development for Business Growth
               </h2>
