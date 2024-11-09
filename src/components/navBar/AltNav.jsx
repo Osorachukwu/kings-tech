@@ -114,7 +114,7 @@ export default function NavBarAlt() {
             </li>
             <li>
               <Link
-                href="/gallery"
+                href="/about"
                 className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
                 onClick={handleToggle}
               >

@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroSub({title, subTitle, pageName}) {
   return (
     <section class="hero-bg bg-center bg-no-repeat bg-gray-700 bg-blend-multiply">
-      <div class="container px-8 max-w-screen-xl py-20 lg:pt-72">
+      <div class="container px-8 max-w-screen-xl py-20">
         <h1
           data-aos="zoom-in-up"
           class="mb-4 text-4xl font-medium tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
