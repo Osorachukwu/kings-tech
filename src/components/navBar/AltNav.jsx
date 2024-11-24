@@ -14,7 +14,7 @@ export default function NavBarAlt() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-sky-400 to-purple-500 dark:bg-gradient-to-r dark:from-purple-500 dark:to-pink-500 shadow-md z-50 mb-16 transition-colors duration-300">
+    <header className="left-0 w-full bg-white dark:bg-gradient-to-r dark:from-purple-500 dark:to-pink-500 shadow-md z-50 transition-colors duration-300">
       {/* Static contact for desktop */}
       <div className="hidden md:block">
         <div className="flex justify-around items-center lg:flex-row gap-4 text-xs font-bold whitespace-nowrap border-b-2 py-1 ">
@@ -44,10 +44,11 @@ export default function NavBarAlt() {
           </a>
         </div>
       </div>
+      {/* bg-gradient-to-r from-sky-400 to-purple-500 */}
 
       {/* Dynamic contact for mobiler */}
       <ContactCarousel />
-      <div className="flex justify-between gap-10 md:justify-center items-center max-w-7xl mx-auto p-3 md:px-8">
+      <div className="flex justify-between gap-10  items-center max-w-7xl mx-auto p-3 ">
         <div className="flex items-center gap-2">
           <Link href="/">
             <Image
@@ -87,6 +88,12 @@ export default function NavBarAlt() {
             className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
           >
             Contact
+          </Link>
+          <Link
+            href="/academy"
+            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+          >
+            Academy 🔥
           </Link>
         </nav>
 
@@ -128,6 +135,15 @@ export default function NavBarAlt() {
                 onClick={handleToggle}
               >
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/academy"
+                className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+                onClick={handleToggle}
+              >
+                Academy 🔥
               </Link>
             </li>
           </ul>

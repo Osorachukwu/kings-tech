@@ -7,7 +7,7 @@ import { Phone, Instagram, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-      <div className="w-full max-w-screen-xl mx-auto p-6">
+      <div className="w-full max-w-screen-xl mx-auto p-6 lg:py-12">
         <div className="sm:flex sm:items-center sm:justify-between space-y-6 sm:space-y-0">
           {/* Logo and Motto */}
           <Link href="/" className="flex items-center gap-2">
@@ -20,13 +20,15 @@ export default function Footer() {
             />
             <div className="text-left">
               <p className="text-lg font-semibold">Kings Tech</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">...your vision, our code</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                ...your vision, our code
+              </p>
             </div>
           </Link>
 
           {/* Contact Details */}
           <div className="flex flex-col lg:flex-row m-5 gap-4 text-sm whitespace-nowrap">
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col gap-3 lg:gap-6">
               <a href="tel:+2348125208257" className="flex items-center gap-2">
                 <Phone size={20} />
                 <span>+234 812 520 8257</span>
@@ -36,8 +38,11 @@ export default function Footer() {
                 <span>+234 703 780 3410</span>
               </a>
             </div>
-            <div className="flex flex-col space-y-2">
-              <a href="mailto:olisahdaniel75@gmail.com" className="flex items-center gap-2">
+            <div className="flex flex-col gap-3 lg:gap-6">
+              <a
+                href="mailto:olisahdaniel75@gmail.com"
+                className="flex items-center gap-2"
+              >
                 <Mail size={20} />
                 <span>olisahdaniel75@gmail.com</span>
               </a>
@@ -55,15 +60,28 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <ul className="text-sm flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 dark:text-gray-400">
-            
             <li>
-              <Link href="/contact" className="hover:text-purple-500 hover:underline">
+              <Link
+                href="/about"
+                className="hover:text-purple-500 hover:underline"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-purple-500 hover:underline"
+              >
                 Contact
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-purple-500 hover:underline">
-                Services
+              <Link
+                href="/academy"
+                className="hover:text-purple-500 hover:underline"
+              >
+                Academy 🔥
               </Link>
             </li>
           </ul>

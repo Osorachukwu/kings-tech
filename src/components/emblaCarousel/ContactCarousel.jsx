@@ -6,7 +6,7 @@ import { Instagram, Mail, Phone } from "lucide-react";
 
 export default function ContactCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 2000 }),
+    Autoplay({ delay: 4000 }),
   ]);
 
   return (
