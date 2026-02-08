@@ -29,7 +29,7 @@ export default function Portfolio() {
             {
               name: "Paschaline's Consult",
               image: protfolio6,
-              desc: "At Paschaline's Consult, we understand the importance of communication and presentation in achieving your goals, which is why we are committed to delivering high-quality, customized solutions that resonate with your audience and drive results..",
+              desc: "We understand the importance of communication and presentation in achieving your goals, we are committed to delivering high-quality, custom solutions that drive results",
               linkUrl: "https://paschalinesconsult.com/"
             },
             {
