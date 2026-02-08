@@ -10,13 +10,13 @@ import Image from 'next/image'
 export default function Portfolio() {
   return (
     <div id='portfolio'>
-      <div className='max-w-7xl mx-auto py-20'>
+      <div className='max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8'>
         <div className='text-3xl font-semibold text-center mb-16'>
           <p>OUR PORTFOLIO</p>
           <p className='text-xl mt-2 font-normal'>Portfolio of innovative digital products.</p>
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {[
 
             {
