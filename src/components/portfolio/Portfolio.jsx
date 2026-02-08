@@ -5,6 +5,8 @@ import protfolio2 from "@/assets/portfolio/innov8.png"
 import protfolio3 from "@/assets/portfolio/nails.png"
 import protfolio4 from "@/assets/portfolio/tra.png"
 import protfolio5 from "@/assets/portfolio/shs.png"
+import protfolio6 from "@/assets/portfolio/paschaline.png"
+import protfolio7 from "@/assets/portfolio/paschaline.png"
 import Image from 'next/image'
 
 export default function Portfolio() {
@@ -18,12 +20,17 @@ export default function Portfolio() {
 
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {[
-
+            // {
+            //   name: "GDA",
+            //   image: protfolio1,
+            //   desc: "Transform your ideas into compelling narratives with our premium ghostwriting service.",
+            //   linkUrl: "https://gda-mu.vercel.app/"
+            // },
             {
-              name: "GDA",
-              image: protfolio1,
-              desc: "Transform your ideas into compelling narratives with our premium ghostwriting service.",
-              linkUrl: "https://gda-mu.vercel.app/"
+              name: "Paschaline's Consult",
+              image: protfolio6,
+              desc: "At Paschaline's Consult, we understand the importance of communication and presentation in achieving your goals, which is why we are committed to delivering high-quality, customized solutions that resonate with your audience and drive results..",
+              linkUrl: "https://paschalinesconsult.com/"
             },
             {
               name: "Innovatespace Tech Accademy",
