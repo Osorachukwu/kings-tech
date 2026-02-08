@@ -73,28 +73,28 @@ export default function NavBarAlt() {
         <nav className="hidden md:flex gap-3 items-center">
           <Link
             href="/"
-            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 transition-all duration-300 transform hover:scale-105"
           >
             Home
           </Link>
           <Link
             href="/services"
-            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 transition-all duration-300 transform hover:scale-105"
           >
             Services
           </Link>
           <Link
             href="/contact"
-            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 transition-all duration-300 transform hover:scale-105"
           >
             Contact
           </Link>
-          <a
-            href="/#portfolio"
-            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
+          <Link
+            href="/portfolio"
+            className="text-gray-900 dark:text-gray-200 hover:text-sky-400 transition-all duration-300 transform hover:scale-105"
           >
             Porfolio
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Icon */}
@@ -138,12 +138,12 @@ export default function NavBarAlt() {
               </Link>
             </li>
             <li>
-              <a
-                href="/#portfolio"
+              <Link 
+                href="/portfolio"
                 className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
               >
                 Porfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

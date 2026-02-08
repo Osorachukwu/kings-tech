@@ -75,7 +75,7 @@ export default function Portfolio() {
                 <div className="card-actions justify-end">
                   {/* <div className="badge badge-outline">React</div> */}
                   <a href={project.linkUrl} target="_blank" rel="noopener noreferrer">
-                    <div className="badge badge-outline">View Project</div>
+                    <button className="btn btn-xs btn-outline rounded-full">View Project</button>
                   </a>
                 </div>
               </div>

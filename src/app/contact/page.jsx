@@ -31,8 +31,8 @@ export default function ContactPage() {
                 GET IN TOUCH
               </h1>
               {/* Contact Details Card */}
-              <div className="absolute bottom-0 w-full lg:p-11 p-5">
-                <div className="bg-white rounded-lg p-6">
+              <div className="absolute bottom-0 w-full lg:p-11 p-5 ">
+                <div className="bg-base-100 rounded-lg p-6">
                   <ContactDetail icon="phone" text="+234 812 520 8257" />
                   <ContactDetail icon="phone" text="+234 703 780 3410" />
                   <ContactDetail icon="email" text="olisahdaniel75@gmail.com" />
@@ -93,7 +93,7 @@ function ContactDetail({ icon, text }) {
         xmlns="http://www.w3.org/2000/svg"
         // Replace this section with specific icons based on the `icon` prop, e.g., `phone`, `email`
       />
-      <h5 className="text-black text-base font-normal leading-6 ml-5">{text}</h5>
+      <h5 className="text-base font-normal leading-6 ml-5">{text}</h5>
     </a>
   );
 }

@@ -6,7 +6,7 @@ import { Phone, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <footer className="bg-base-300 rounded-lg shadow m-4">
       <div className="w-full max-w-screen-xl mx-auto p-6 lg:py-12">
         <div className="sm:flex sm:items-center sm:justify-between space-y-6 sm:space-y-0">
           {/* Logo and Motto */}
@@ -20,7 +20,7 @@ export default function Footer() {
             />
             <div className="text-left">
               <p className="text-lg font-semibold">Kings Tech</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600">
                 ...your vision, our code
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links */}
-          <ul className="text-sm flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 dark:text-gray-400">
+          <ul className="text-sm flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600">
             <li>
               <Link
                 href="/about"
@@ -78,18 +78,18 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/academy"
+                href="/portfolio"
                 className="hover:text-purple-500 hover:underline"
               >
-                Academy 🔥
+                Portfolio
               </Link>
             </li>
           </ul>
         </div>
 
-        <hr className="my-6 border-gray-200 dark:border-gray-700" />
+        <hr className="my-6 border-base-100" />
 
-        <div className="text-center text-sm text-gray-500 dark:text-gray-400">
+        <div className="text-center text-sm text-gray-500">
           © 2023{" "}
           <a href="/" className="font-semibold hover:underline">
             Kings Tech™

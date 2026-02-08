@@ -50,17 +50,17 @@ export default function OurServices() {
   ];
 
   return (
-    <div className="py-16 bg-gray-200 dark:bg-gray-800">
+    <div className="py-16">
       <div data-aos="fade-up">
         <h2
-          className="text-center text-2xl font-bold mb-12 text-gray-900 dark:text-gray-100 md:text-3xl lg:text-4xl">
+          className="text-center text-2xl font-bold mb-12 md:text-3xl lg:text-4xl">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
           {ourServicesItem.map((item, i) => (
             <div
               key={i}
-              className="p-2 md:p-6 lg:px-8 bg-white dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-[1.05]"
+              className="p-2 md:p-6 lg:px-8 bg-base-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out hover:scale-[1.05]"
             >
               <div className="flex justify-center mb-6">
                 <Image
@@ -71,10 +71,10 @@ export default function OurServices() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2 text-center">
+              <h3 className="text-xl font-semibold mb-2 text-center">
                 {item.serviceTitle}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              <p className="opacity-60 text-center mb-6">
                 {item.serviceDesc}
               </p>
             </div>
@@ -84,9 +84,9 @@ export default function OurServices() {
         <div className="flex justify-center my-20">
           <Link
             href="/services"
-            className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
+            className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200"
           >
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex items-center">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 flex items-center">
               Learn More
               <ArrowRight className="w-4 h-4 ml-2 rtl:rotate-180" />
             </span>

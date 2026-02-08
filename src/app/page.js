@@ -6,7 +6,6 @@ import OurServices from "@/components/OurServices";
 import AboutUs from "@/components/AboutUs";
 import WhatsappChat from "@/components/WhatsappChat";
 import CaptivateYourAudience from "@/components/CaptivateYourAudience";
-import Portfolio from "@/components/portfolio/Portfolio";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
     <Hero />
     <AboutUs />
     <OurServices />
-    <Portfolio />
     <WhatsappChat />
     <CaptivateYourAudience />
     {/* <Porfolio /> */}
