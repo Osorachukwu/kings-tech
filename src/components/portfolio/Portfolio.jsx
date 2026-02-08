@@ -20,12 +20,12 @@ export default function Portfolio() {
 
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {[
-            // {
-            //   name: "GDA",
-            //   image: protfolio1,
-            //   desc: "Transform your ideas into compelling narratives with our premium ghostwriting service.",
-            //   linkUrl: "https://gda-mu.vercel.app/"
-            // },
+            {
+              name: "GDA",
+              image: protfolio1,
+              desc: "Transform your ideas into compelling narratives with our premium ghostwriting service.",
+              linkUrl: "https://gda-mu.vercel.app/"
+            },
             {
               name: "Paschaline's Consult",
               image: protfolio6,
