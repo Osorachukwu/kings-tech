@@ -89,12 +89,12 @@ export default function NavBarAlt() {
           >
             Contact
           </Link>
-          <Link
-            href="/academy"
+          <a
+            href="/#portfolio"
             className="text-gray-900 dark:text-gray-200 hover:text-sky-400 dark:hover:text-pink-500 transition-all duration-300 transform hover:scale-105"
           >
-            Academy 🔥
-          </Link>
+            Porfolio
+          </a>
         </nav>
 
         {/* Mobile Menu Icon */}
