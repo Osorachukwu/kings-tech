@@ -11,7 +11,7 @@ export default function ContactCarousel() {
 
   return (
     <div
-      className="embla mx-auto w-full border md:hidden border-b-2 py-3"
+      className="embla mx-auto w-full md:hidden borde border-b border-base-300 py-3 text-white"
       ref={emblaRef}
     >
       <div className="embla__container h-full flex">
