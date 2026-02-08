@@ -48,8 +48,8 @@ export default function Portfolio() {
               image: protfolio5, desc: "Providing innovative smart hand services for enhanced user experience.",
               linkUrl: "https://www.smarthandyservices.co.uk/"
             }
-          ].map((project, index) => (
-            <div className="card bg-base-100 shadow-sm">
+          ].map((project, i) => (
+            <div key={i} className="card bg-base-100 shadow-sm">
               <figure>
                 <Image
                   src={project.image}
