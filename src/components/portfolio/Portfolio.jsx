@@ -49,7 +49,7 @@ export default function Portfolio() {
               linkUrl: "https://www.smarthandyservices.co.uk/"
             }
           ].map((project, i) => (
-            <div key={i} className="card bg-base-100 shadow-sm">
+            <div key={i} className="card bg-base-200 shadow-sm">
               <figure>
                 <Image
                   src={project.image}
